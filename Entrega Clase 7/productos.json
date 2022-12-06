@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Cuchara",
+      "description": "De acero inoxidable",
+      "price": 120,
+      "thumbnail": "Image",
+      "stock": 500,
+      "code": 009
+    },
+    {
+      "id": 2,
+      "title": "Cuchara con mango",
+      "description": "De acero inoxidable, con mango de madera",
+      "price": 120,
+      "thumbnail": "Image",
+      "stock": 500,
+      "code": 009
+    }
+  ]
