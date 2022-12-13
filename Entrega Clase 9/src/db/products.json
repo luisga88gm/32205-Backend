@@ -1,0 +1,80 @@
+[
+    {
+       "id": 1,
+       "title": "Cuchara",
+       "price": 120,
+       "description": "De acero inoxidable",
+       "category": "cubiertos",
+       "thumbnail": [
+          "https://volfar.vtexassets.com/arquivos/ids/401581-1200-auto?v=638054965808430000&width=1200&height=auto&aspect=true"
+       ],
+       "code": "001",
+       "state": true,
+       "stock": 500
+    },
+    {
+       "id": 2,
+       "title": "Cuchara con mango",
+       "price": 140,
+       "description": "De acero inoxidable, con mango de madera",
+       "category": "cubiertos",
+       "thumbnail": [
+          "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/585/833/products/cucharas-11-8b145a6fcd1461beba16474522233983-640-0.webp"
+       ],
+       "code": "002",
+       "state": true,
+       "stock": 400
+    },
+    {
+       "id": 3,
+       "title": "Cuchillo",
+       "price": 100,
+       "description": "De acero inoxidable",
+       "category": "cubiertos",
+       "thumbnail": [
+          "https://volfar.vtexassets.com/arquivos/ids/401770-1200-auto?v=638054965869430000&width=1200&height=auto&aspect=true"
+       ],
+       "code": "003",
+       "state": true,
+       "stock": 300
+    },
+    {
+       "id": 4,
+       "title": "Tenedor",
+       "price": 100,
+       "description": "De acero inoxidable",
+       "category": "cubiertos",
+       "thumbnail": [
+          "https://volfar.vtexassets.com/arquivos/ids/401665-1200-auto?v=638054965834200000&width=1200&height=auto&aspect=true"
+       ],
+       "code": "004",
+       "state": true,
+       "stock": 300
+    },
+    {
+       "id": 5,
+       "title": "Vaso Rigolleau",
+       "price": 250,
+       "description": "De vidro templado",
+       "category": "vasos",
+       "thumbnail": [
+          "https://volfar.vtexassets.com/arquivos/ids/400301-1200-auto?v=638054962614400000&width=1200&height=auto&aspect=true"
+       ],
+       "code": "005",
+       "state": true,
+       "stock": 400
+    },
+    {
+       "id": 6,
+       "title": "Plato Playo",
+       "price": 400,
+       "description": "Plato playo de cerámica",
+       "category": "platos",
+       "thumbnail": [
+          "https://volfar.vtexassets.com/arquivos/ids/400800-1200-auto?v=638054963994000000&width=1200&height=auto&aspect=true"
+       ],
+       "code": "006",
+       "state": true,
+       "stock": 400
+    }
+ ]
