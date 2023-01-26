@@ -15,9 +15,12 @@ Router.get("/products", async (req, res) => {
     };
     const result = await Managers.ProductsManager.getProducts(query, options);
 
+    const user = req.session.user;
+
     const response = {
       status: "success",
       payload: result.docs,
+      user,
       totalPages: result.totalPages,
       prevPage: result.prevPage,
       nextPage: result.nextPage,

@@ -17,7 +17,7 @@ Router.get("/", async (req, res) => {
 
     res.send({
       status: "error",
-      error: error.message || "SOMTHING WENT WRONG",
+      error: error.message || "SOMETHING WENT WRONG",
     });
   }
 });
@@ -85,7 +85,7 @@ Router.post("/:cid/product/:pid", async (req, res) => {
 
     res.send({
       status: "error",
-      error: error.message || "SOMTHING WENT WRONG",
+      error: error.message || "SOMETHING WENT WRONG",
     });
   }
 });
@@ -132,7 +132,7 @@ Router.put("/:cid", async (req, res) => {
 
     res.send({
       status: "error",
-      error: error.message || "SOMTHING WENT WRONG",
+      error: error.message || "SOMETHING WENT WRONG",
     });
   }
 });
@@ -159,7 +159,7 @@ Router.put("/:cid/product/:pid", async (req, res) => {
 
     res.send({
       status: "error",
-      error: error.message || "SOMTHING WENT WRONG",
+      error: error.message || "SOMETHING WENT WRONG",
     });
   }
 });
@@ -180,7 +180,7 @@ Router.delete("/:cid", async (req, res) => {
 
     res.send({
       status: "error",
-      error: error.message || "SOMTHING WENT WRONG",
+      error: error.message || "SOMETHING WENT WRONG",
     });
   }
 });

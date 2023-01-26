@@ -1,4 +1,13 @@
 <main>
+  {{#if response.user}}
+    <h2 class="welcome__message">Bienvenido
+      {{this.response.user.first_name}}
+      {{this.response.user.last_name}}</h2>
+    <div class="welcome__navbar">
+      <li class="welcome__navbar--li"><a href="/admin">Administrador</a></li>
+      <li class="welcome__navbar--li"><a href="/logout">Logout</a></li>
+    </div>
+  {{/if}}
   <div class="pagination__container">
     <div class="filters__container">
       <h4>Filters:</h4>
