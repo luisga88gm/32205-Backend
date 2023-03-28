@@ -10,7 +10,7 @@ export const createCart = async (req, res) => {
       message: "Cart created",
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -30,7 +30,7 @@ export const getCarts = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -52,6 +52,8 @@ export const getCartById = async (req, res) => {
       payload: result,
     });
   } catch (error) {
+    req.logger.error(error);
+
     res.status(400).send({ status: error.name, message: error.message });
   }
 };
@@ -72,7 +74,7 @@ export const addProductToCart = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -95,7 +97,7 @@ export const updateProductQuantity = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -112,7 +114,7 @@ export const addArrayOfProducts = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -134,7 +136,7 @@ export const deleteOneProduct = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -150,7 +152,7 @@ export const emptyCart = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }
@@ -172,7 +174,7 @@ export const purchaseCart = async (req, res) => {
       payload: result,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.status(400).send({ status: error.name, message: error.message });
   }

@@ -18,7 +18,7 @@ Router.get("/products/:pid", passportCall("jwt"), getOneProduct);
 
 Router.get("/error", getErrorPage);
 
-Router.get("/carts/:cid", getCartPage); //Si no hay carrito, renderiza una alternativa
+Router.get("/carts/:cid", getCartPage); //Si no hay carrito, se renderiza una alternativa
 
 Router.post("/carts/:cid/purchase", purchaseCart);
 

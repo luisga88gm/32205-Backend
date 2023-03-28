@@ -23,6 +23,8 @@ export const getAllProducts = async (req, res) => {
       user,
     });
   } catch (error) {
+    req.logger.error(error);
+
     res.render("error");
   }
 };
@@ -41,6 +43,8 @@ export const getOneProduct = async (req, res) => {
       user,
     });
   } catch (error) {
+    req.logger.error(error);
+
     res.render("error");
   }
 };
@@ -60,6 +64,8 @@ export const getAdmin = async (req, res) => {
 
     return res.redirect("/home/products");
   } catch (error) {
+    req.logger.error(error);
+
     res.render("error");
   }
 };
@@ -68,7 +74,7 @@ export const getErrorPage = (req, res) => {
   try {
     return res.render("error");
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
   }
 };
 
@@ -85,7 +91,8 @@ export const getCartPage = async (req, res) => {
       user,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
+    
     res.render("error");
   }
 };

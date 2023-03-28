@@ -6,6 +6,6 @@ export const generateMockProducts = (req, res) => {
 
     res.send({ status: "success", payload: products });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
   }
 };

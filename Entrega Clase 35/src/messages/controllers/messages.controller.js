@@ -7,7 +7,7 @@ export const getChatPage = async (req, res) => {
       user,
     });
   } catch (error) {
-    console.log(error);
+    req.logger.error(error);
 
     res.send({
       succes: false,
